@@ -9,6 +9,8 @@ var app = express();
 
 app.use(express.static('public'));
 
+app.get('/',(req,res) => res.render('public/index.html'));
+
 app.listen(5000, function(){
     console.log("Servidor listo");
 });
